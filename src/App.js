@@ -7,7 +7,8 @@ import Funds from "./pages/Funds"
 import Cash from "./pages/Cash"
 import Bank from "./pages/Bank"
 import Profile from "./pages/Profile"
-import Congrats from "./pages/Congrats"
+import Track from "./pages/Track"
+import Contact from "./pages/Contact"
 import Confirmation from "./pages/Confirmation"
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -23,7 +24,8 @@ const App = () => {
         <Route exact path='/bank' component={Bank} />
         <Route exact path='/profile' component={Profile} />
         <Route exact path='/funds' component={Funds} />
-        <Route exact path='/congrats' component={Congrats} />
+        <Route exact path='/track' component={Track} />
+        <Route exact path='/contact' component={Contact} />
         <Route exact path='/confirmation' component={Confirmation} />
         <Route path="*" component={() => "404 NOT FOUND"} />
       </Switch>

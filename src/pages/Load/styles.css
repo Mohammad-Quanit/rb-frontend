@@ -162,3 +162,7 @@ a{
   height: 20px;
   margin-bottom: 0;
 }
+
+.content-wrapper{
+  position: relative !important;
+}

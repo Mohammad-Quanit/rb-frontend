@@ -171,3 +171,7 @@
 .account-detail-cash input{
   margin-top: 10px;
 }
+
+.content-wrapper{
+  position: relative !important;
+}
