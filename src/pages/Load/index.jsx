@@ -32,7 +32,7 @@ export default function confirmation() {
           <option>Bill payment</option>
           <option>House rent</option>
           <option>Travel</option>
-          <option>others</option>
+          <option>Others</option>
         </select>
 
         <div className="amount_receive terms_condition">
