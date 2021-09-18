@@ -39,7 +39,7 @@ const Signup = () => {
 
 
       
-      <input type="number" placeholder="Enter Amount" />
+      <input type="text" placeholder="Enter Amount in SR" />
 
       <button>Continue</button>
       </div>
