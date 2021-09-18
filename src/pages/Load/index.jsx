@@ -14,15 +14,8 @@ export default function confirmation() {
         </div>
 
 
-        <h4 style={{marginBottom: '10px'}}>Beneficiary Name</h4>
-
-        <select className="select-field">
-          <option>Ijaz Asghar</option>
-          <option>Atif Mehmood</option>
-          <option>Compensation</option>
-          <option>Educational Support</option>
-          <option>others</option>
-        </select>
+        <h4 style={{marginBottom: '10px'}}>Full name of beneficiary</h4>
+          <input type="text" placeholder="" />
 
       <h4 style={{marginBottom: '10px'}}>Purpose of Remittance?</h4>
         {/* <input className="input-field" type="telephone" /> */}
