@@ -12,11 +12,11 @@ const Signup = () => {
 
 <div className="option-checkbox-wrapper">
   <div>
-  <input onChange={() => {settoggle1(false); settoggle2(true); }} type="checkbox" checked={toggle1} /> 
+  <input onClick={() => {settoggle1(!toggle1); settoggle2(!toggle2); }} type="checkbox" checked={toggle1} /> 
   <span>From Account</span> 
   </div>
   <div>
-  <input onChange={() => {settoggle1(true); settoggle2(false); }} type="checkbox" checked={toggle2} /> 
+  <input onClick={() => {settoggle1(!toggle1); settoggle2(!toggle2); }} type="checkbox" checked={toggle2} /> 
   <span>By Debit Card</span> 
   </div>
 </div>
