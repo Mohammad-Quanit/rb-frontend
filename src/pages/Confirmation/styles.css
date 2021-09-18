@@ -158,3 +158,9 @@ a{
     z-index: 99;
     z-index: 6;
 }
+
+@media(max-width: 500px){
+  .content-wrapper{
+    width: 100% !important;
+  }
+}

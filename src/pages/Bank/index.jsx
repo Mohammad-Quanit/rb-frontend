@@ -13,7 +13,7 @@ const Signup = () => {
 <div className="option-checkbox-wrapper">
   <div>
   <input onChange={() => {settoggle1(false); settoggle2(true); }} type="checkbox" value={toggle1} /> 
-  <span>By Account Number</span> 
+  <span>From Account</span> 
   </div>
   <div>
   <input onChange={() => {settoggle1(true); settoggle2(false); }} type="checkbox" value={toggle2} /> 
