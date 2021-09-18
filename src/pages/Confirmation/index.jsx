@@ -48,7 +48,7 @@ import './styles.css'
      <button onClick={() => settoggle(true)}>Confirm</button>
 
      <div className={`${toggle && 'show-popup' } popup`}>
-       <span className="close" onClick={() => settoggle(false)}></span>
+       <span className="close" onClick={() => settoggle(false)}>x</span>
     <h3 className='congrats--msg'>Congratulations! <br/> <span> Your remittance has been sent. You will be notified once the recipient receives the funds. </span> </h3>
     </div>
 
