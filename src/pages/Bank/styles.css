@@ -12,6 +12,9 @@
   margin-bottom: 20px;
 
 }
+.bank_wrapper{
+  position: relative;
+}
 .option-checkbox-wrapper{
  margin: 10px 0;
 }

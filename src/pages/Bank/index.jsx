@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom'
 const Signup = () => {
   const [toggle1, settoggle1] = useState(true)
   const [toggle2, settoggle2] = useState(false)
+  const [active, setActive] = useState(false)
   return (
     <div className="main-wrapper signup-wrapper">
-      <div className="content-wrapper signup-wrapper shadow-sm">
+      <div className="content-wrapper bank_wrapper signup-wrapper shadow-sm">
         <h4 style={{marginBottom: '18px'}}>Please choose a method</h4>
 
 <div className="option-checkbox-wrapper">
@@ -41,7 +42,16 @@ const Signup = () => {
       
       <input type="text" placeholder="Enter Amount in SR" />
 
-      <button>Continue</button>
+      <button onClick={() => setActive(true)}>Confirm</button>
+
+      <div className={`${active && 'show-popup' } popup`}>
+       <span className="close" onClick={() => setActive(false)}>x</span>
+    <h3 className='congrats--msg'>Congratulations! <br/> <span> Your remittance has been sent. You will be notified once the recipient receives the funds. </span> </h3>
+    </div>
+
+      <div className={`${active && 'dark_bg'}`}>
+
+    </div>
       </div>
 
     </div>
