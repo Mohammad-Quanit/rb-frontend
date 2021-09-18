@@ -3,24 +3,34 @@ import React, {useState, useStates} from 'react'
 import { Link } from 'react-router-dom'
 
 const Signup = () => {
-  const [toggle, settoggle] = useState(false)
+  const [toggle1, settoggle1] = useState(true)
+  const [toggle2, settoggle2] = useState(false)
   return (
     <div className="main-wrapper signup-wrapper">
       <div className="content-wrapper signup-wrapper shadow-sm">
         <h4 style={{marginBottom: '18px'}}>Please choose a method</h4>
 
 <div className="option-checkbox-wrapper">
-  <span>By Account</span> <input onClick={() => settoggle(!toggle)} type="checkbox" value={toggle} /> <span>By Card</span>
+  <div>
+  <input onChange={() => {settoggle1(false); settoggle2(true); }} type="checkbox" value={toggle1} /> 
+  <span>By Account Number</span> 
+  </div>
+  <div>
+  <input onChange={() => {settoggle1(true); settoggle2(false); }} type="checkbox" value={toggle2} /> 
+  <span>By Debit Card</span> 
+  </div>
 </div>
 
 {
-  toggle ?
+  toggle1 &&
   <div>
   <label>Account number</label>
   <input type="text"  />
 </div>
-:
-<div>
+}
+{
+  toggle2 && 
+  <div>
       <label>Debit card number</label>
          <input type="text"  />
       </div>

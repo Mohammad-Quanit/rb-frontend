@@ -13,9 +13,12 @@
 
 }
 .option-checkbox-wrapper{
+ margin: 10px 0;
+}
+.option-checkbox-wrapper div{
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .option-checkbox-wrapper input{
   width: 20px;
