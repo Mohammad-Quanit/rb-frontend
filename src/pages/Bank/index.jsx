@@ -46,7 +46,7 @@ const Signup = () => {
 
       <div className={`${active && 'show-popup' } popup`}>
        <span className="close" onClick={() => setActive(false)}>x</span>
-    <h3 className='congrats--msg'>Congratulations! <br/> <span> Funds have been added to you Paybox account. </span> </h3>
+    <h3 className='congrats--msg'>Congratulations! <br/> <span> Funds have been added to your Paybox account. </span> </h3>
     </div>
 
       <div className={`${active && 'dark_bg'}`}>
