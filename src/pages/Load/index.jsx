@@ -13,6 +13,17 @@ export default function confirmation() {
           <label>1,000 PKR</label>
         </div>
 
+
+        <h4 style={{marginBottom: '10px'}}>Remittance Name</h4>
+
+        <select className="select-field">
+          <option>Ijaz Asghar</option>
+          <option>Atif Mehmood</option>
+          <option>Compensation</option>
+          <option>Educational Support</option>
+          <option>others</option>
+        </select>
+
       <h4 style={{marginBottom: '10px'}}>Purpose of Remittance?</h4>
         {/* <input className="input-field" type="telephone" /> */}
         <select className="select-field">
