@@ -40,6 +40,7 @@ const Signup = () => {
           <div className="seperator"> <span> or </span></div>
           <input className="input-field" type="number" placeholder="Iqama" />
           <input className="input-field" type="tel" placeholder="Phone number" />
+          <input className="input-field" type="text" placeholder="Password" />
           <input className="input-field" type="text" placeholder="Address" />
           <Link to="profile"> <button>Signup</button> </Link>
         </form>

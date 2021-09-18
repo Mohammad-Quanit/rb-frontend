@@ -17,6 +17,7 @@
 
 .confirmation-wrapper .content-wrapper{
   padding-top: 40px;
+  position: relative;
 }
 .content-wrapper{
   width: 320px;
@@ -133,4 +134,20 @@ a{
     font-size: 28px;
     font-weight: 100;
     color: #8144e5;
+}
+
+.popup{
+  display: none;
+}
+
+.show-popup{
+  display: block;
+}
+
+.close{
+  position: absolute;
+    top: 34px;
+    cursor: pointer;
+    right: 34px;
+    z-index: 99;
 }

@@ -1,7 +1,9 @@
-import './styles.css'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './styles.css'
 
-export default function confirmation() {
+ const Confirmation = () => {
+  const [toggle, settoggle] = useState(false)
   return (
     <div className="main-wrapper signup-wrapper confirmation-wrapper">
       <div className="content-wrapper shadow-sm">
@@ -43,9 +45,16 @@ export default function confirmation() {
           <label>Collection Point</label>
           <span>Larkana, Post Office</span>
         </div>
-       <Link to="/congrats"> <button>Confirm</button> </Link>
+     <button onClick={() => settoggle(true)}>Confirm</button>
+
+     <div className={`${toggle && 'show-popup' } popup`}>
+       <span className="close" onClick={() => settoggle(false)}>x</span>
+    <h3 className='congrats--msg'>Congratulations! <br/> <span> Your remittance has been sent. You will be notified once the recipient receives the funds. </span> </h3>
+    </div>
 
       </div>
     </div>
   )
 }
+
+export default Confirmation;

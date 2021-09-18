@@ -2,6 +2,12 @@
   padding-top: 30px;
   padding-bottom: 10px;
   text-align: center;
+  background: #fff;
+    padding: 020px;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 30px;
 }
 
 .congrats--msg span{
