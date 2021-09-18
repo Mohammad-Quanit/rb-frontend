@@ -10,6 +10,10 @@
   display: grid;
   place-items: center;
 }
+
+.confirmation-wrapper .content-wrapper{
+  padding-top: 40px;
+}
 .content-wrapper{
   width: 320px;
   height: auto;
@@ -90,4 +94,39 @@ span{
 
 a{
   text-decoration: none;
+}
+
+.col_2{
+  display: flex;
+  align-items: center;
+}
+
+.col_2 div{
+  width: 50%;
+  margin: 0 !important;
+}
+
+.confirmation-wrapper label{
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.confirmation-wrapper span{
+  font-weight: 400;
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.confirmation-wrapper div{
+  margin: 10px 0;
+}
+
+.amount{
+  text-align: center;
+  text-align: center;
+    margin: 16px;
+    font-size: 28px;
+    font-weight: 100;
+    color: #8144e5;
 }
