@@ -22,14 +22,14 @@ const Signup = () => {
 </div>
 
 {
-  toggle1 &&
+  toggle2 &&
   <div>
   <label>Account number</label>
   <input type="text"  />
 </div>
 }
 {
-  toggle2 && 
+  toggle1 && 
   <div>
       <label>Debit card number</label>
          <input type="text"  />
