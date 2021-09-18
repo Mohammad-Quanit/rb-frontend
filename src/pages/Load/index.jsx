@@ -6,7 +6,7 @@ export default function confirmation() {
     <div className="main-wrapper signup-wrapper confirmation-wrapper">
       <div className="content-wrapper shadow-sm">
         <h4 style={{ marginBottom: '20px' }}> How much do you want to remit?</h4>
-        <input className="input-field" type="telephone" placeholder="Enter Amount" />
+        <input className="input-field" type="telephone" placeholder="Enter Amount in SAR" />
 
         <div className="amount_receive">
           <span>This amount will be received: </span>
@@ -14,7 +14,7 @@ export default function confirmation() {
         </div>
 
 
-        <h4 style={{marginBottom: '10px'}}>Remittance Name</h4>
+        <h4 style={{marginBottom: '10px'}}>Beneficiary Name</h4>
 
         <select className="select-field">
           <option>Ijaz Asghar</option>
@@ -27,10 +27,11 @@ export default function confirmation() {
       <h4 style={{marginBottom: '10px'}}>Purpose of Remittance?</h4>
         {/* <input className="input-field" type="telephone" /> */}
         <select className="select-field">
-          <option>Agency Commissions</option>
-          <option>Air Transport</option>
-          <option>Compensation</option>
-          <option>Educational Support</option>
+          <option>Home expenses</option>
+          <option>Educational expenses</option>
+          <option>Bill payment</option>
+          <option>House rent</option>
+          <option>Travel</option>
           <option>others</option>
         </select>
 
