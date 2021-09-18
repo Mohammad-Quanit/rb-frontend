@@ -35,7 +35,7 @@ const Signup = () => {
           <label>Your Available Balance</label>
           <span>100.00 SAR</span>
         </div>
-        <button>Load Funds</button>
+        <Link to="funds"> <button>Load Funds</button> </Link>
         <Link to="load"> <button>Send Money</button> </Link>
 
         <div>

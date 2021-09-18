@@ -156,3 +156,8 @@
   font-size: 14px;
   font-weight: 700;
 }
+
+.funds-options-wrapper a{
+  width: 50%;
+  text-align: center;
+}

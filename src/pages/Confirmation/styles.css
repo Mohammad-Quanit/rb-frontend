@@ -11,6 +11,10 @@
   place-items: center;
 }
 
+.sup--font{
+  font-size: 10px;
+}
+
 .confirmation-wrapper .content-wrapper{
   padding-top: 40px;
 }

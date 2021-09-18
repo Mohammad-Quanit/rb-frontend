@@ -11,6 +11,21 @@
   place-items: center;
 }
 
+.select-field{
+  box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    border: none;
+    padding: 6px 20px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.select-field:focus-visible{
+  outline: none;
+}
+
 .confirmation-wrapper .content-wrapper{
   padding-top: 40px;
 }

@@ -14,13 +14,20 @@ export default function confirmation() {
         </div>
 
       <h4 style={{marginBottom: '10px'}}>Purpose of Remittance?</h4>
-        <input className="input-field" type="telephone" />
+        {/* <input className="input-field" type="telephone" /> */}
+        <select className="select-field">
+          <option>Agency Commissions</option>
+          <option>Air Transport</option>
+          <option>Compensation</option>
+          <option>Educational Support</option>
+          <option>others</option>
+        </select>
 
         <div className="amount_receive terms_condition">
           <input type="checkbox" /> <span>Agree to Terms and Conditions</span>
         </div>
 
-        <Link to="confirmation"> <button>Confirm</button> </Link>
+        <Link to="confirmation"> <button>Next</button> </Link>
 
       </div>
     </div>

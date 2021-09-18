@@ -6,7 +6,7 @@ export default function confirmation() {
     <div className="main-wrapper signup-wrapper confirmation-wrapper">
       <div className="content-wrapper shadow-sm">
         <h4>You are about to make following Remittance</h4>
-        <h5 className="amount">1,000</h5>
+        <h5 className="amount">1,000 <sup className="sup--font">SAR</sup> </h5>
         <div className="col_2">
           <div>
             <label>Exchange Rate</label>
