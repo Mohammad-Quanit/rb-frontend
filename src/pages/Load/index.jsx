@@ -1,49 +1,26 @@
 import './styles.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function confirmation() {
   return (
     <div className="main-wrapper signup-wrapper confirmation-wrapper">
       <div className="content-wrapper shadow-sm">
-      <h4>Transfer Confirmation</h4>
-    <h5 className="amount">1,000</h5>
-      <div className="col_2">
-        <div>
-          <label>Exchange Rate</label>
-          <span>36.717</span>
+        <h4 style={{ marginBottom: '20px' }}> How much do you want to remit?</h4>
+        <input className="input-field" type="telephone" placeholder="Enter Amount" />
+
+        <div className="amount_receive">
+          <span>This amount will be received: </span>
+          <label>1,000 PKR</label>
         </div>
-        <div>
-          <label>Amount in SAR</label>
-          <span>1,000 SAR</span>
+
+      <h4 style={{marginBottom: '10px'}}>Purpose of Remittance?</h4>
+        <input className="input-field" type="telephone" />
+
+        <div className="amount_receive terms_condition">
+          <input type="checkbox" /> <span>Agree to Terms and Conditions</span>
         </div>
-      </div>
-      <div className="col_2">
-        <div>
-          <label>Transfer Fee</label>
-          <span>15.000</span>
-        </div>
-        <div>
-          <label>VAT</label>
-          <span>0.750</span>
-        </div>
-      </div>
-      <div>
-      <label>Total Amount</label>
-          <span>1,000 SAR</span>
-      </div>
-      <div>
-      <label>Total Amount (Received)</label>
-          <span>1,000 SAR</span>
-      </div>
-      <div>
-      <label>Beneficiary Name</label>
-          <span>1,000 SAR</span>
-      </div>
-      <div>
-      <label>Collection Point</label>
-          <span>Larkana, Post Office</span>
-      </div>
-      <button>Confirm</button>
+
+        <Link to="confirmation"> <button>Confirm</button> </Link>
 
       </div>
     </div>

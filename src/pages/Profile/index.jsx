@@ -31,18 +31,28 @@ const Signup = () => {
             </svg>
           </div>
         </div>
-        <form>
-          <input className="input-field" type="text" placeholder="Full name" />
-          <input className="input-field" type="email" placeholder="Email address" />
-          <input className="input-field" type="text" placeholder="CNIC" />
-          <div className="seperator"> <span> or </span></div>
-          <input className="input-field" type="number" placeholder="Passport" />
-          <div className="seperator"> <span> or </span></div>
-          <input className="input-field" type="number" placeholder="Iqama" />
-          <input className="input-field" type="tel" placeholder="Phone number" />
-          <input className="input-field" type="text" placeholder="Address" />
-          <Link to="profile"> <button>Signup</button> </Link>
-        </form>
+        <div className="balance-detail">
+          <label>Your Available Balance</label>
+          <span>100.00 SAR</span>
+        </div>
+        <button>Load Funds</button>
+        <Link to="load"> <button>Send Money</button> </Link>
+
+        <div>
+          <span>Latest Transactions</span>
+        </div>
+
+        <div className="transaction-wrapper">
+          <div className="transaction">
+          <label>4283 31XX XXXX 2285</label>
+          <span>Card Deposit</span>
+          </div>
+          <div className="transaction-amount">
+            <label>100.00 SAR</label>
+            <span>26.02.2019 15.08</span>
+          </div>
+        </div>
+
       </div>
     </div>
   )

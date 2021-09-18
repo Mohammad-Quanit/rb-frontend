@@ -6,19 +6,26 @@
 .profile-pic-wrapper{
   width: 100px;
   height: 100px;
-  border: 4px solid #e9e9e9;
   background: #fff;
   border-radius: 100px;
   margin: 0 auto;
   margin-bottom: 20px;
 
 }
-
+.option-checkbox-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.option-checkbox-wrapper input{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 0;
+}
 .seperator{
   position: relative;
   width: 100%;
   margin-bottom: 10px;
-  color: #9a9a9a;
 }
 
 .seperator span{
@@ -107,3 +114,69 @@
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(34 41 57 / 10%) 0px 2px 4px 0px;
 } */
+
+.balance-detail{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.balance-detail span{
+  font-size: 14px;
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.transaction-wrapper{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px !important;
+  padding-left: 8px;
+}
+
+.transaction-wrapper div{
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-wrapper label, .transaction-wrapper span{
+  white-space: nowrap;
+  margin: 0;
+}
+
+.funds-options-wrapper{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.funds-options-wrapper div{
+  height: 120px;
+  flex: 1;
+  border-radius: 8px;
+  background-color: #fff;
+
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.instructions-list{
+  margin-left: 14px;
+  font-weight: 300;
+}
+
+.account-detail-cash{
+  border-top: 1px solid;
+  margin: 10px 0;
+  margin-top: 16px;
+  padding-top: 10px;
+}
+.account-detail-cash input{
+  margin-top: 10px;
+}

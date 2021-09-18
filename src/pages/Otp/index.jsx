@@ -1,5 +1,5 @@
 import './styles.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function otp() {
   return (
@@ -7,16 +7,16 @@ export default function otp() {
       <div className="content-wrapper shadow-sm">
 
         <div className="login-typo">
-          <h2>Otp</h2>
+          <h2>Paybox</h2>
         </div>
         <div className="register-account">
-          <span>Didn't recieve any otp /</span>
-          <Link to="/"> <span>Try Again</span> </Link>
+          <span>Didn't recieve OTP /</span>
+          <Link to="/"> <span>Resend</span> </Link>
         </div>
 
         <form>
-          <input className="input-field" type="number" placeholder="Enter otp" />
-          <button>Login</button>
+          <input className="input-field" type="number" placeholder="Enter OTP" />
+         <Link to="/profile"> <button>Continue</button> </Link>
         </form>
       </div>
     </div>

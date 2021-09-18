@@ -1,0 +1,10 @@
+.congrats--msg{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.congrats--msg span{
+  font-size: 14px;
+  font-weight: 400;
+}
