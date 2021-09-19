@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import './styles.css'
+import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import './styles.css';
 
- const Confirmation = () => {
-  const [toggle, settoggle] = useState(false)
+const Confirmation = () => {
+  const history = useHistory()
+  const [toggle, settoggle] = useState(false);
+  const redirectToHome = () => {
+    history.push("/profile")
+  }
   return (
-    <div className="main-wrapper signup-wrapper confirmation-wrapper">
-      <div className="content-wrapper shadow-sm">
+    <div className='main-wrapper signup-wrapper confirmation-wrapper'>
+      <div className='content-wrapper shadow-sm'>
         <h4>You are about to make following Remittance</h4>
-        <h5 className="amount">1,000 <sup className="sup--font">SAR</sup> </h5>
-        <div className="col_2">
+        <h5 className='amount'>
+          1,000 <sup className='sup--font'>SAR</sup>{' '}
+        </h5>
+        <div className='col_2'>
           <div>
             <label>Exchange Rate</label>
             <span>36.717</span>
@@ -19,7 +26,7 @@ import './styles.css'
             <span>1,000 SAR</span>
           </div>
         </div>
-        <div className="col_2">
+        <div className='col_2'>
           <div>
             <label>Transfer Fee</label>
             <span>15.000</span>
@@ -45,20 +52,26 @@ import './styles.css'
           <label>Collection Point</label>
           <span>Larkana, Post Office</span>
         </div>
-     <button onClick={() => settoggle(true)}>Confirm</button>
+        <button onClick={() => settoggle(true)}>Confirm</button>
 
-     <div className={`${toggle && 'show-popup' } popup`}>
-       <span className="close" onClick={() => settoggle(false)}>x</span>
-    <h3 className='congrats--msg'>Congratulations! <br/> <span> Your remittance has been sent. You will be notified once the recipient receives the funds. </span> </h3>
-    </div>
+        <div className={`${toggle && 'show-popup'} popup`}>
+          <span className='close' onClick={redirectToHome}>
+            x
+          </span>
+          <h3 className='congrats--msg'>
+            Congratulations! <br />{' '}
+            <span>
+              {' '}
+              Your remittance has been sent. You will be notified once the
+              recipient receives the funds.{' '}
+            </span>{' '}
+          </h3>
+        </div>
 
-    <div className={`${toggle && 'dark_bg'}`}>
-
-    </div>
-
+        <div className={`${toggle && 'dark_bg'}`}></div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Confirmation;

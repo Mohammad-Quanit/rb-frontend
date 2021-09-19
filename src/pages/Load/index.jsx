@@ -1,16 +1,25 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import React from 'react'
+
 import './styles.css'
 import { Link } from 'react-router-dom'
+import axiosInstance from '../../config/axios'
 
-export default function confirmation() {
+const confirmation = () => {
+  const [convertedCurrency, setConvertedCurency] = React.useState(0)
+
+  const realtimeExchange = async (evt) => {  
+    setConvertedCurency(evt.target.value * 44.83)
+  }
   return (
     <div className="main-wrapper signup-wrapper confirmation-wrapper">
       <div className="content-wrapper shadow-sm">
         <h4 style={{ marginBottom: '20px' }}> How much do you want to remit?</h4>
-        <input className="input-field" type="telephone" placeholder="Enter Amount in SAR" />
+        <input className="input-field" type="telephone" placeholder="Enter Amount in SAR" onChange={realtimeExchange} />
 
         <div className="amount_receive">
           <span>This amount will be received: </span>
-          <label>1,000 PKR</label>
+          <label>{convertedCurrency} PKR</label>
         </div>
 
 
@@ -38,3 +47,5 @@ export default function confirmation() {
     </div>
   )
 }
+
+export default confirmation;

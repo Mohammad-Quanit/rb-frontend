@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 import { useFormik } from 'formik';
 import BeatLoader from 'react-spinners/BeatLoader'
 import Loading from 'react-fullscreen-loading';
@@ -8,6 +9,7 @@ import axiosInstance from '../../config/axios';
 
 const Signup = () => {
   const [isLoading, setIsLoading] = React.useState(false);
+  const history = useHistory();
 
   const formik = useFormik({
     initialValues: {
@@ -26,8 +28,15 @@ const Signup = () => {
         const response = await axiosInstance.post('/otp/generateotp', payload);
         localStorage.setItem('account', JSON.stringify(values));
         setIsLoading(false);
-        console.log(response);
+        console.log(response.data.GenerateOtpResponse);
+        if(response.data.GenerateOtpResponse.ResponseDetails.includes('cnic missing or invalid"')) {
+          alert("Please provide all details correctly!")
+          return
+        }
+        alert("Succesfully Created Account.")
+        history.push("/profile")  
       } catch (error) {
+        alert("Please provide all details correctly!")
         console.error(error);
       }
     },
